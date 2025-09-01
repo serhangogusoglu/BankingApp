@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onboarding2Activity"
+    android:background="@color/backcolor"
+    >
+    
+    <ImageView
+        android:id="@+id/mainPic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_width="335dp"
+        android:layout_height="298dp"
+        android:background="@drawable/group2"
+        />
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="6dp"
+        android:background="@drawable/slide2"
+        app:layout_constraintEnd_toEndOf="@+id/mainPic"
+        app:layout_constraintStart_toStartOf="@+id/mainPic"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="430dp" />
+    
+    <ImageView
+        android:id="@+id/text2"
+        android:layout_width="330dp"
+        android:layout_height="136dp"
+        android:background="@drawable/heading2"
+        app:layout_constraintEnd_toEndOf="@+id/mainPic"
+        app:layout_constraintStart_toStartOf="@+id/mainPic"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="470dp" />
+
+    <Button
+        android:id="@+id/nextButton2"
+        android:layout_width="335dp"
+        android:layout_height="56dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="650dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="35dp"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
