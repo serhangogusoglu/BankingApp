@@ -40,7 +40,7 @@
         android:layout_marginTop="470dp" />
 
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/nextButton3"
         android:layout_width="335dp"
         android:layout_height="56dp"
         android:text="Next"

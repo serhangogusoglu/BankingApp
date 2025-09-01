@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BankingApp"
         tools:targetApi="31">
-
+        <activity
+            android:name=".SignInUp.SignInActivity"
+            android:exported="false" />
         <activity
             android:name=".Onboarding3Activity"
             android:exported="false" />
@@ -21,22 +23,19 @@
             android:exported="false" />
         <activity
             android:name=".Onboarding1Activity"
-            android:exported="false" />
-
-        <!-- SplashActivity artık başlangıç ekranı -->
+            android:exported="false" /> <!-- SplashActivity artık başlangıç ekranı -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-
     </application>
 
 </manifest>
