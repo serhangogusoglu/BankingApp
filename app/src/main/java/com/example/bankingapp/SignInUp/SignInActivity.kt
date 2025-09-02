@@ -10,6 +10,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bankingapp.MainActivity
 import com.example.bankingapp.Onboarding3Activity
+import com.example.bankingapp.R
 import com.example.bankingapp.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
@@ -40,7 +41,7 @@ class SignInActivity : AppCompatActivity() {
 
             // Email kontrolü
             if (!Patterns.EMAIL_ADDRESS.matcher(emailText).matches()) {
-                binding.emailLayout.error = "Lütfen geçerli bir e-posta giriniz"
+                binding.emailLayout.error = getString(R.string.emailWarn)
                 return@setOnClickListener
             } else {
                 binding.emailLayout.error = null
@@ -48,18 +49,19 @@ class SignInActivity : AppCompatActivity() {
 
             // Şifre kontrolü (en az 6 karakter)
             if (passwordText.length < 6) {
-                binding.passwordLayout.error = "Şifreniz en az 6 karakter olmalı"
+                binding.passwordLayout.error = getString(R.string.pwdWarn)
                 return@setOnClickListener
             } else {
                 binding.passwordLayout.error = null
             }
 
             if (emailText == savedEmail && passwordText == savedPassword) {
-                Toast.makeText(this, "Giriş Başarılı", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.signInSuccess), Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
             } else {
-                Toast.makeText(this, "E-posta veya şifre yanlış!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.invalidEmailOrPassword), Toast.LENGTH_SHORT)
+                    .show()
             }
         }
 

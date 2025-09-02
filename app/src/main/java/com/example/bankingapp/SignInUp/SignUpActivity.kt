@@ -38,28 +38,28 @@ class SignUpActivity : AppCompatActivity() {
             var isValid = true
 
             if (fullName.isEmpty()) {
-                binding.fullNameLayout.error = "Lütfen Geçerli Bir İsim Giriniz."
+                binding.fullNameLayout.error = getString(R.string.fullNameWarn)
                 isValid = false
             } else {
                 binding.fullNameLayout.error = null
             }
 
             if (phone.length != 11 || !phone.all { it.isDigit() }) {
-                binding.phoneNumberLayout.error = "Telefon 11 haneli olmalı."
+                binding.phoneNumberLayout.error = getString(R.string.phoneNumWarn)
                 isValid = false
             } else {
                 binding.phoneNumberLayout.error = null
             }
 
             if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
-                binding.emailLayout.error = "Lütfen Geçerli Bir E-mail Giriniz."
+                binding.emailLayout.error = getString(R.string.emailWarn)
                 isValid = false
             } else {
                 binding.emailLayout.error = null
             }
 
             if (password.length < 6) {
-                binding.passwordLayout.error = "Şifreniz en az 6 karakter olmalı."
+                binding.passwordLayout.error = getString(R.string.pwdWarn)
                 isValid = false
             } else {
                 binding.passwordLayout.error = null
@@ -73,14 +73,14 @@ class SignUpActivity : AppCompatActivity() {
                     apply()
                 }
 
-                Toast.makeText(this, "Kayıt Başarılı! Giriş Yapabilirsiniz.", Toast.LENGTH_SHORT)
+                Toast.makeText(this, getString(R.string.signUpSuccess), Toast.LENGTH_SHORT)
                     .show()
                 startActivity(Intent(this, SignInActivity::class.java))
                 finish()
             } else {
                 Toast.makeText(
                     this,
-                    "Lütfen tüm alanlardaki hataları düzeltin.",
+                    getString(R.string.allFieldsError),
                     Toast.LENGTH_SHORT
                 ).show()
             }

@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">BankingApp</string>
+
+    <string name="fullNameWarn">Lütfen Geçerli Bir İsim Giriniz.</string>
+    <string name="phoneNumWarn">Telefon 11 haneli olmalı.</string>
+    <string name="emailWarn">Lütfen Geçerli Bir E-mail Giriniz.</string>
+    <string name="pwdWarn">Şifreniz en az 6 karakter olmalı.</string>
+    <string name="allFieldsError">"Lütfen tüm alanlardaki hataları düzeltin."</string>
+    <string name="signUpSuccess">Kayıt Başarılı! Giriş Yapabilirsiniz.</string>
+    <string name="signInSuccess">Giriş Başarılı!</string>
+    <string name="invalidEmailOrPassword">E-posta veya şifre yanlış!</string>
+
+
+
 </resources>
