@@ -110,7 +110,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginBottom="45dp"
-                android:text="AR Jonson"
+                android:text="Tanya Myroniuk"
                 android:textColor="@android:color/white"
                 android:textSize="14sp" />
 
@@ -169,18 +169,18 @@
                 android:layout_marginTop="130dp"
                 android:layout_marginEnd="3dp"
                 android:backgroundTint="@color/backcolor"
-                android:src="@drawable/logo_mastercard" />
+                android:src="@drawable/mastercard_full_svgrepo_com" />
 
             <ImageView
                 android:id="@+id/ivCardLogo"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="314dp"
+                android:layout_marginEnd="280dp"
                 android:backgroundTint="@color/backcolor"
-                android:src="@drawable/chipp" />
+                android:src="@drawable/chip" />
 
             <ImageView
                 android:id="@+id/ivMastercardLogo"
@@ -190,8 +190,9 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
-                android:src="@drawable/temassiz"
-                android:contentDescription="Card Logo" />
+                android:src="@drawable/contactless"
+                android:contentDescription="Card Logo"
+                app:tint="@color/contactless" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 

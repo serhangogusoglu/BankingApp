@@ -6,6 +6,8 @@
     <color name="blue">#0E60B3</color>
     <color name="dividerColor">#363636</color>
     <color name="SignInUpTextColor">#838383</color>
+    <color name="contactless">#737070</color>
+
 
 
 </resources>
