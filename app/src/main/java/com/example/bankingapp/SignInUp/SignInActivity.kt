@@ -2,24 +2,75 @@ package com.example.bankingapp.SignInUp
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
+import android.text.InputFilter
+import android.util.Patterns
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.bankingapp.MainActivity
-import com.example.bankingapp.R
+import com.example.bankingapp.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivitySignInBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivitySignInBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_sign_in)
 
-        val backIcon = findViewById<ImageView>(R.id.backIcon)
-        backIcon.setOnClickListener {
-            val intent = Intent(this@SignInActivity, MainActivity::class.java)
-            startActivity(intent)
+        // Şifreyi en fazla 6 karakter ile sınırlama
+        binding.password.filters = arrayOf(InputFilter.LengthFilter(6))
+
+        // Geri dönüş
+        binding.backIcon.setOnClickListener {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
+
+        // "I am a new user Sign Up" → SignUpActivity açılır
+        binding.tvSignIn.setOnClickListener {
+            startActivity(Intent(this, SignUpActivity::class.java))
+        }
+
+        // Sign In butonuna basıldığında kontrol et
+        binding.signInButton.setOnClickListener {
+            val emailText = binding.email.text.toString().trim()
+            val passwordText = binding.password.text.toString().trim()
+
+            var isValid = true
+
+            // Email kontrolü
+            if (!Patterns.EMAIL_ADDRESS.matcher(emailText).matches()) {
+                binding.emailLayout.error = "Lütfen geçerli bir e-posta giriniz"
+                isValid = false
+            } else {
+                binding.emailLayout.error = null
+            }
+
+            // Şifre kontrolü (en az 6 karakter)
+            if (passwordText.length < 6) {
+                binding.passwordLayout.error = "Şifreniz en az 6 karakter olmalı"
+                isValid = false
+            } else {
+                binding.passwordLayout.error = null
+            }
+
+            if (isValid) {
+                Toast.makeText(this, "Bilgiler geçerli. Firebase'e bağlanabilir!", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, MainActivity::class.java))
+                finish()
+            }
+        }
+
+        // Kullanıcı password alanına odaklanırsa hata kalksın
+        binding.password.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) binding.passwordLayout.error = null
+        }
+
+        binding.email.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) binding.emailLayout.error = null
         }
     }
 }
