@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.text.InputFilter
+import android.util.Patterns
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -22,6 +24,9 @@ class SignUpActivity : AppCompatActivity() {
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.password.filters = arrayOf(InputFilter.LengthFilter(6))
+        binding.phoneNumber.filters = arrayOf(InputFilter.LengthFilter(11))
+
 
         // Sign up butonuna basıldıgında
         binding.signInButton.setOnClickListener {
@@ -30,21 +35,55 @@ class SignUpActivity : AppCompatActivity() {
             val email = binding.email.text.toString().trim()
             val password = binding.password.text.toString().trim()
 
-            if(fullName.isEmpty() || phone.isEmpty() || email.isEmpty() || password.length < 6) {
-                Toast.makeText(this, "Tüm alanları doğru şekilde doldurun", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
+            var isValid = true
+
+            if (fullName.isEmpty()) {
+                binding.fullNameLayout.error = "Lütfen Geçerli Bir İsim Giriniz."
+                isValid = false
+            } else {
+                binding.fullNameLayout.error = null
             }
 
-            val sharedPref = getSharedPreferences("UserData", Context.MODE_PRIVATE)
-            with(sharedPref.edit()) {
-                putString("email", email)
-                putString("password", password)
-                apply()
+            if (phone.length != 11 || !phone.all { it.isDigit() }) {
+                binding.phoneNumberLayout.error = "Telefon 11 haneli olmalı."
+                isValid = false
+            } else {
+                binding.phoneNumberLayout.error = null
             }
 
-            Toast.makeText(this, "Kayıt Başarılı! Giriş Yapabilirsiniz.", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, SignInActivity::class.java))
-            finish()
+            if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                binding.emailLayout.error = "Lütfen Geçerli Bir E-mail Giriniz."
+                isValid = false
+            } else {
+                binding.emailLayout.error = null
+            }
+
+            if (password.length < 6) {
+                binding.passwordLayout.error = "Şifreniz en az 6 karakter olmalı."
+                isValid = false
+            } else {
+                binding.passwordLayout.error = null
+            }
+
+            if (isValid) {
+                val sharedPref = getSharedPreferences("UserData", Context.MODE_PRIVATE)
+                with(sharedPref.edit()) {
+                    putString("email", email)
+                    putString("password", password)
+                    apply()
+                }
+
+                Toast.makeText(this, "Kayıt Başarılı! Giriş Yapabilirsiniz.", Toast.LENGTH_SHORT)
+                    .show()
+                startActivity(Intent(this, SignInActivity::class.java))
+                finish()
+            } else {
+                Toast.makeText(
+                    this,
+                    "Lütfen tüm alanlardaki hataları düzeltin.",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
 
         // Zaten hesabın varsa sign in sayfasına git

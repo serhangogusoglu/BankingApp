@@ -22,21 +22,13 @@ class SignInActivity : AppCompatActivity() {
         setContentView(binding.root)
         enableEdgeToEdge()
 
-        // Şifreyi en fazla 6 karakter ile sınırlama
         binding.password.filters = arrayOf(InputFilter.LengthFilter(6))
 
-        // Geri dönüş
         binding.backIcon.setOnClickListener {
             startActivity(Intent(this, Onboarding3Activity::class.java))
             finish()
         }
 
-        // "I am a new user Sign Up" → SignUpActivity açılır
-       // binding.tvSignIn.setOnClickListener {
-       //     startActivity(Intent(this, SignUpActivity::class.java))
-       // }
-
-        // Sign In butonuna basıldığında kontrol et
         binding.signInButton.setOnClickListener {
             val emailText = binding.email.text.toString().trim()
             val passwordText = binding.password.text.toString().trim()
@@ -45,7 +37,6 @@ class SignInActivity : AppCompatActivity() {
             val savedEmail = sharedPref.getString("email", null)
             val savedPassword = sharedPref.getString("password", null)
 
-           // var isValid = true
 
             // Email kontrolü
             if (!Patterns.EMAIL_ADDRESS.matcher(emailText).matches()) {
@@ -63,7 +54,7 @@ class SignInActivity : AppCompatActivity() {
                 binding.passwordLayout.error = null
             }
 
-            if(emailText == savedEmail && passwordText == savedPassword){
+            if (emailText == savedEmail && passwordText == savedPassword) {
                 Toast.makeText(this, "Giriş Başarılı", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
@@ -82,7 +73,7 @@ class SignInActivity : AppCompatActivity() {
         }
 
         binding.tvSignIn.setOnClickListener {
-            startActivity(Intent(this,SignUpActivity::class.java))
+            startActivity(Intent(this, SignUpActivity::class.java))
             finish()
         }
     }
