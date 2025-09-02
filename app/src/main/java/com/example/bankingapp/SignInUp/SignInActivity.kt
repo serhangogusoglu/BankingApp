@@ -1,5 +1,6 @@
 package com.example.bankingapp.SignInUp
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.text.InputFilter
@@ -8,6 +9,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.bankingapp.MainActivity
+import com.example.bankingapp.Onboarding3Activity
 import com.example.bankingapp.databinding.ActivitySignInBinding
 
 class SignInActivity : AppCompatActivity() {
@@ -25,26 +27,30 @@ class SignInActivity : AppCompatActivity() {
 
         // Geri dönüş
         binding.backIcon.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, Onboarding3Activity::class.java))
             finish()
         }
 
         // "I am a new user Sign Up" → SignUpActivity açılır
-        binding.tvSignIn.setOnClickListener {
-            startActivity(Intent(this, SignUpActivity::class.java))
-        }
+       // binding.tvSignIn.setOnClickListener {
+       //     startActivity(Intent(this, SignUpActivity::class.java))
+       // }
 
         // Sign In butonuna basıldığında kontrol et
         binding.signInButton.setOnClickListener {
             val emailText = binding.email.text.toString().trim()
             val passwordText = binding.password.text.toString().trim()
 
-            var isValid = true
+            var sharedPref = getSharedPreferences("UserData", Context.MODE_PRIVATE)
+            val savedEmail = sharedPref.getString("email", null)
+            val savedPassword = sharedPref.getString("password", null)
+
+           // var isValid = true
 
             // Email kontrolü
             if (!Patterns.EMAIL_ADDRESS.matcher(emailText).matches()) {
                 binding.emailLayout.error = "Lütfen geçerli bir e-posta giriniz"
-                isValid = false
+                return@setOnClickListener
             } else {
                 binding.emailLayout.error = null
             }
@@ -52,15 +58,17 @@ class SignInActivity : AppCompatActivity() {
             // Şifre kontrolü (en az 6 karakter)
             if (passwordText.length < 6) {
                 binding.passwordLayout.error = "Şifreniz en az 6 karakter olmalı"
-                isValid = false
+                return@setOnClickListener
             } else {
                 binding.passwordLayout.error = null
             }
 
-            if (isValid) {
-                Toast.makeText(this, "Bilgiler geçerli. Firebase'e bağlanabilir!", Toast.LENGTH_SHORT).show()
+            if(emailText == savedEmail && passwordText == savedPassword){
+                Toast.makeText(this, "Giriş Başarılı", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, MainActivity::class.java))
                 finish()
+            } else {
+                Toast.makeText(this, "E-posta veya şifre yanlış!", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -71,6 +79,11 @@ class SignInActivity : AppCompatActivity() {
 
         binding.email.setOnFocusChangeListener { _, hasFocus ->
             if (hasFocus) binding.emailLayout.error = null
+        }
+
+        binding.tvSignIn.setOnClickListener {
+            startActivity(Intent(this,SignUpActivity::class.java))
+            finish()
         }
     }
 }
