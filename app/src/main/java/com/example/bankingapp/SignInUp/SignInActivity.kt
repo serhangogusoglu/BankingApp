@@ -57,7 +57,8 @@ class SignInActivity : AppCompatActivity() {
 
             if (emailText == savedEmail && passwordText == savedPassword) {
                 Toast.makeText(this, getString(R.string.signInSuccess), Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this, MainActivity::class.java))
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
                 finish()
             } else {
                 Toast.makeText(this, getString(R.string.invalidEmailOrPassword), Toast.LENGTH_SHORT)

@@ -6,15 +6,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.InputFilter
 import android.util.Patterns
-import android.widget.TextView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.bankingapp.R
-import com.example.bankingapp.databinding.ActivitySignInBinding
 import com.example.bankingapp.databinding.ActivitySignUpBinding
+import java.util.Random
 
 class SignUpActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -66,10 +62,20 @@ class SignUpActivity : AppCompatActivity() {
             }
 
             if (isValid) {
+
+                val cardNumber = generateCardNumber()
+                val expiryDate = generateExpiryDate()
+                val cvv = generateCVV()
+
                 val sharedPref = getSharedPreferences("UserData", Context.MODE_PRIVATE)
                 with(sharedPref.edit()) {
                     putString("email", email)
                     putString("password", password)
+                    putString("fullName", fullName)
+                    putString("cardNumber", cardNumber)
+                    putString("expiryDate", expiryDate)
+                    putString("cvv", cvv)
+
                     apply()
                 }
 
@@ -96,5 +102,25 @@ class SignUpActivity : AppCompatActivity() {
             val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    private fun generateCardNumber(): String {
+        val random = Random()
+        val cardNumber = StringBuilder()
+        for (i in 1..16) {
+            cardNumber.append(random.nextInt(10))
+            if (i % 4 == 0 && i != 16) cardNumber.append(" ")
+        }
+        return cardNumber.toString()
+    }
+
+    private fun generateExpiryDate(): String {
+        val month = (1..12).random()
+        val year = (2025..2030).random()
+        return String.format("%02d/%d", month, year)
+    }
+
+    private fun generateCVV(): String {
+        return (100..999).random().toString()
     }
 }

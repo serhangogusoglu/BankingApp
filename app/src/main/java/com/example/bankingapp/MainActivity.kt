@@ -17,6 +17,18 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val sharedPref = getSharedPreferences("UserData", MODE_PRIVATE)
+        val cardNumber = sharedPref.getString("cardNumber", "0000 0000 0000 0000")
+        val expiryDate = sharedPref.getString("expiryDate", "00/00")
+        val cvv = sharedPref.getString("cvv", "000")
+        val fullName = sharedPref.getString("fullName", "Guest")
+
+        binding.tvCardNumber.text = cardNumber
+        binding.tvCardExpiry.text = expiryDate
+        binding.tvCardCvv.text = cvv
+        binding.tvCardName.text = fullName
+        binding.tvUserName.text = fullName
+
         // Transaction RecyclerView
         transactionAdapter = TransactionAdapter(getDummyTransactions())
         binding.rvTransactions.adapter = transactionAdapter
