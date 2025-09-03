@@ -3,6 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="backcolor">#FF1E1E1E</color>
+    <color name="backGroundcolor">#272727</color>
+    <color name="backGroundcolorCategory">#7A7A7A</color>
+
     <color name="blue">#0E60B3</color>
     <color name="dividerColor">#363636</color>
     <color name="SignInUpTextColor">#838383</color>

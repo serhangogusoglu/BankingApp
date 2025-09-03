@@ -48,10 +48,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun getDummyTransactions(): List<Transaction> {
         return listOf(
-            Transaction("Apple Store", "Entertainment", "- $5.99", R.drawable.baseline_airlines_24),
-            Transaction("Spotify", "Music", "- $12.99", R.drawable.baseline_music_note_24),
-            Transaction("Money Transfer", "Transaction", "+ $300", R.drawable.baseline_money_24),
-            Transaction("Grocery", "Food", "- $88", R.drawable.baseline_add_shopping_cart_24)
+            Transaction("Apple Store", "Entertainment", "- $5.99", R.drawable.apple_svgrepo_com),
+            Transaction("Spotify", "Music", "- $12.99", R.drawable.spotify_color_svgrepo_com),
+            Transaction(
+                "Money Transfer",
+                "Transaction",
+                "+ $300",
+                R.drawable._money_receive_svgrepo_com
+            ),
+            Transaction("Grocery", "Food", "- $88", R.drawable.grocery_store_bakery_svgrepo_com)
         )
     }
 }
