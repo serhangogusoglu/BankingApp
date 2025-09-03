@@ -2,7 +2,14 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.BankingApp" parent="Theme.Material3.DayNight.NoActionBar">
          <item name="colorPrimary">@color/blue</item>
+        <item name="bottomNavigationStyle">@style/CustomBottomNavStyle</item>
     </style>
 
     <style name="Theme.BankingApp" parent="Base.Theme.BankingApp" />
+
+    <style name="CustomBottomNavStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemBackground">@android:color/transparent</item>
+
+        <item name="itemRippleColor">@android:color/transparent</item>
+    </style>
 </resources>
