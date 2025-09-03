@@ -9,7 +9,7 @@
     <item
         android:id="@+id/cards"
         android:icon="@drawable/baseline_credit_card_24"
-        android:title="Cards" />
+        android:title="My Cards" />
 
     <item
         android:id="@+id/statistics"
