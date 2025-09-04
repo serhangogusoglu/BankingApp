@@ -5,6 +5,8 @@
     <color name="blue_selected">#2196F3</color>
     <color name="gray_unselected">#8e8e8e</color>
     <color name="gray">#B8B3B3</color>
+    <color name="iconBackground">#1E1E2D</color>
+
 
     <color name="backcolor">#FF1E1E1E</color>
     <color name="backGroundcolor">#272727</color>

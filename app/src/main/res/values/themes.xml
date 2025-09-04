@@ -12,4 +12,18 @@
 
         <item name="itemRippleColor">@android:color/transparent</item>
     </style>
+
+    <style name="MonthTextStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#C0C0C0</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
 </resources>
