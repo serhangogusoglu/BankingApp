@@ -1,5 +1,6 @@
 package com.example.bankingapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bankingapp.adapter.TransactionAdapter
 import com.example.bankingapp.databinding.FragmentHomeBinding
+import com.example.bankingapp.databinding.FragmentProfileBinding
 import com.example.bankingapp.models.Transaction
 
 class HomeFragment : Fragment() {
@@ -45,6 +47,15 @@ class HomeFragment : Fragment() {
         transactionAdapter = TransactionAdapter(getDummyTransactions())
         binding.rvTransactions.adapter = transactionAdapter
         binding.rvTransactions.layoutManager = LinearLayoutManager(requireContext())
+
+        // Profil sayfasına geçiş için click listener
+        binding.ivProfile.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, ProfileFragment()) // fragment_container -> MainActivity'deki container ID
+                .addToBackStack(null) // geri tuşuna basınca HomeFragment’a dönmek için
+                .commit()
+        }
+
     }
 
     private fun getDummyTransactions(): List<Transaction> {

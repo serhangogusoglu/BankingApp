@@ -23,6 +23,7 @@
             android:id="@+id/ivProfile"
             android:layout_width="48dp"
             android:layout_height="58dp"
+            android:clickable="true"
             android:scaleType="centerCrop"
             android:background="@drawable/profile"
             android:padding="4dp" />
