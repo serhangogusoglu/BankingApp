@@ -7,16 +7,6 @@
     android:background="#0D1321"
     tools:context=".SettingsFragment">
 
-    <ImageView
-        android:id="@+id/backIcon"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="54dp"
-        android:background="@drawable/back_icon"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/tvSettings"
         android:layout_width="wrap_content"
