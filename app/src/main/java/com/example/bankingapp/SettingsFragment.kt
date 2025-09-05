@@ -45,6 +45,13 @@ class SettingsFragment : Fragment() {
                 .commit()
         }
 
+        binding.arrowRightPrivacyPolicy.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, PrivacyPolicyFragment())
+                .addToBackStack(null)
+                .commit()
+        }
+
 
     }
 
