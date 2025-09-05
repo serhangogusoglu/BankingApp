@@ -1,6 +1,5 @@
 package com.example.bankingapp
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bankingapp.adapter.TransactionAdapter
 import com.example.bankingapp.databinding.FragmentHomeBinding
-import com.example.bankingapp.databinding.FragmentProfileBinding
 import com.example.bankingapp.models.Transaction
 
 class HomeFragment : Fragment() {
