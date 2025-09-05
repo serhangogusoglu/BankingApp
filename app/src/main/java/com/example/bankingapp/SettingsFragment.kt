@@ -52,6 +52,13 @@ class SettingsFragment : Fragment() {
                 .commit()
         }
 
+        binding.arrowRightContactUs.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragmentContainer, ContactUsFragment())
+                .addToBackStack(null)
+                .commit()
+        }
+
 
     }
 
