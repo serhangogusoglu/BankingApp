@@ -39,7 +39,7 @@
                 android:id="@+id/tvWelcome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Welcome back,"
+                android:text="@string/welcomeBack"
                 android:textColor="@android:color/white"
                 android:textSize="14sp" />
 
@@ -47,7 +47,7 @@
                 android:id="@+id/tvUserName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tanya Myroniuk"
+                android:text="@string/userName"
                 android:textColor="@android:color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -91,7 +91,7 @@
                 android:id="@+id/tvCardNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4562 1122 4595 7852"
+                android:text="@string/cardNumber"
                 android:textColor="@android:color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -105,7 +105,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="14dp"
                 android:layout_marginBottom="45dp"
-                android:text="Tanya Myroniuk"
+                android:text="@string/userName"
                 android:textColor="@android:color/white"
                 android:textSize="14sp" />
 
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_above="@id/tvCardExpiry"
                 android:layout_alignStart="@id/tvCardExpiry"
-                android:text="Expiry Date"
+                android:text="@string/expiryDate"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="12sp"/>
 
@@ -125,7 +125,7 @@
                 android:layout_height="wrap_content"
                 android:layout_above="@id/tvCardCvv"
                 android:layout_alignStart="@id/tvCardCvv"
-                android:text="CVV"
+                android:text="@string/cvv"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="12sp"/>
 
@@ -135,7 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
-                android:text="24/2000"
+                android:text="@string/cardExpiryDate"
                 android:textColor="@android:color/white"
                 android:textSize="14sp" />
 
@@ -147,7 +147,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginEnd="230dp"
                 android:layout_marginBottom="1dp"
-                android:text="698"
+                android:text="@string/cvvNumber"
                 android:textColor="@android:color/white"
                 android:textSize="14sp" />
 
@@ -219,7 +219,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sent"
+                android:text="@string/sent"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 android:layout_marginTop="4dp"/>
@@ -243,7 +243,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Receive"
+                android:text="@string/receive"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 android:layout_marginTop="4dp"/>
@@ -267,7 +267,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Loan"
+                android:text="@string/loan"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 android:layout_marginTop="4dp"/>
@@ -291,7 +291,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Topup"
+                android:text="@string/topUp"
                 android:textColor="@android:color/white"
                 android:textSize="12sp"
                 android:layout_marginTop="4dp"/>
@@ -303,7 +303,7 @@
         android:id="@+id/tvTransactionTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Transaction"
+        android:text="@string/transaction"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"

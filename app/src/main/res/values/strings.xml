@@ -1,14 +1,116 @@
 <resources>
     <string name="app_name">BankingApp</string>
 
-    <string name="fullNameWarn">Lütfen Geçerli Bir İsim Giriniz.</string>
-    <string name="phoneNumWarn">Telefon 11 haneli olmalı.</string>
-    <string name="emailWarn">Lütfen Geçerli Bir E-mail Giriniz.</string>
-    <string name="pwdWarn">Şifreniz en az 6 karakter olmalı.</string>
-    <string name="allFieldsError">"Lütfen tüm alanlardaki hataları düzeltin."</string>
-    <string name="signUpSuccess">Kayıt Başarılı! Giriş Yapabilirsiniz.</string>
-    <string name="signInSuccess">Giriş Başarılı!</string>
-    <string name="invalidEmailOrPassword">E-posta veya şifre yanlış!</string>
+    <string name="fullNameWarn">Please enter a valid name.</string>
+    <string name="phoneNumWarn">The phone number must be 11 digits long.</string>
+    <string name="emailWarn">Please enter a valid email address.</string>
+    <string name="pwdWarn">Your password must be at least 6 characters long.</string>
+    <string name="allFieldsError">Please correct the errors in all fields.</string>
+    <string name="signUpSuccess">Registration successful! You can now log in.</string>
+    <string name="signInSuccess">Login successful!</string>
+    <string name="invalidEmailOrPassword">Email or password is incorrect!</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="contact_us_description">We would love to hear from you. Please fill out the form below.</string>
+    <string name="send_message">Send Message</string>
+    <string name="next">Next</string>
+    <string name="signin">Sign In</string>
+    <string name="newUserSignIn">I am a new user Sign Up</string>
+    <string name="signUp">Sign Up</string>
+    <string name="alreadyHaveAccount">Already Have an Account. Sign In</string>
+    <string name="changePassword">Change Password</string>
+    <string name="currentPassword">Current Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="userName">Tanya Myroniuk</string>
+    <string name="seniorDesigner">Senior Designer</string>
+    <string name="fullName">Full Name</string>
+    <string name="eMail">E-mail Address</string>
+    <string name="userEmail">tanyamyroniuk@gmail.com</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="userPhoneNumber">05382735334</string>
+    <string name="birthDate">Birth Date</string>
+    <string name="day">28</string>
+    <string name="month">September</string>
+    <string name="year">2000</string>
+    <string name="welcomeBack">Welcome back,</string>
+    <string name="cardNumber">4562 1122 4595 7852</string>
+    <string name="expiryDate">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="cardExpiryDate">24/2000</string>
+    <string name="cvvNumber">699</string>
+    <string name="sent">Sent</string>
+    <string name="receive">Receive</string>
+    <string name="loan">Loan</string>
+    <string name="topUp">Topup</string>
+    <string name="transaction">Transaction</string>
+    <string name="chooseLanguage">Choose Language</string>
+    <string name="english">English</string>
+    <string name="turkish">Türkçe</string>
+    <string name="deutsch">Deutsch</string>
+    <string name="french">Français</string>
+    <string name="privacyPolicyTitle">Privacy Policy</string>
+    <string name="profile">Profile</string>
+    <string name="personalInformation">Personal Information</string>
+    <string name="paymentPreferences">Payment Preferences</string>
+    <string name="banksAndCards">Banks and Cards</string>
+    <string name="notifications">Notifications</string>
+    <string name="messageCenter">Message Center</string>
+    <string name="address">Address</string>
+    <string name="settings">Settings</string>
+    <string name="general">General</string>
+    <string name="language">Language</string>
+    <string name="myProfile">My Profile</string>
+    <string name="security">Security</string>
+    <string name="shareWithUs">Choose what data you share with us</string>
+    <string name="biometric">Biometric</string>
+    <string name="statistics">Statistics</string>
+    <string name="currentBalance">Current Balance</string>
+    <string name="money">$8,545.00</string>
+    <string name="oct">Oct</string>
+    <string name="nov">Nov</string>
+    <string name="dec">Dec</string>
+    <string name="jan">Jan</string>
+    <string name="feb">Feb</string>
+    <string name="mar">Mar</string>
+    <string name="sellAll">Sell All</string>
+    <string name="title">Title</string>
+    <string name="category">Category</string>
+    <string name="amount">Amount</string>
+    <string name="hintName">Name</string>
+    <string name="hintEmail">Email</string>
+    <string name="hintPhoneNumber">Phone Number</string>
+    <string name="hintMessage">Message</string>
+    <string name="hintEmailAddress">Email Address</string>
+    <string name="hintPassword">Password</string>
+    <string name="hintEnterCurrentPassword">Enter Current Password</string>
+    <string name="hintEnterNewPassword">Enter New Password</string>
+    <string name="hintEnterNewPasswordAgain">Enter New Password Again</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

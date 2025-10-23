@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
-        android:padding="16dp"
+        android:paddingTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -22,6 +22,7 @@
             android:id="@+id/btnBack"
             android:layout_width="42dp"
             android:layout_height="42dp"
+            android:paddingStart="15dp"
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/back_icon" />
@@ -31,9 +32,10 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingStart="-60dp"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
-            android:text="Contact Us"
+            android:text="@string/contact_us"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
     </LinearLayout>
@@ -57,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                android:text="We would love to hear from you. Please fill out the form below."
+                android:text="@string/contact_us_description"
                 android:textColor="@color/white"
                 android:textSize="16sp" />
 
@@ -66,7 +68,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Name"
+                android:hint="@string/hintName"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -82,7 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Email"
+                android:hint="@string/hintEmailAddress"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -97,7 +99,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="Phone"
+                android:hint="@string/hintPhoneNumber"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -114,7 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                android:hint="Message"
+                android:hint="@string/hintMessage"
                 app:boxBackgroundMode="outline">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -131,7 +133,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:backgroundTint="#1E88E5"
-                android:text="Send Message"
+                android:text="@string/send_message"
                 android:textColor="@android:color/white" />
         </LinearLayout>
     </ScrollView>

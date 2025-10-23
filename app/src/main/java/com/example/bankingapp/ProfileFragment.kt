@@ -31,10 +31,7 @@ class ProfileFragment : Fragment() {
         }
 
         binding.btnBack.setOnClickListener {
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.fragmentContainer, HomeFragment())
-                .addToBackStack(null)
-                .commit()
+            parentFragmentManager.popBackStack()
         }
     }
 

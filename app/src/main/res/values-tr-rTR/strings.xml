@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bankacılık Uygulaması</string>
+
+    <string name="fullNameWarn">Lütfen geçerli bir ad girin.</string>
+    <string name="phoneNumWarn">Telefon numarası 11 haneli olmalıdır.</string>
+    <string name="emailWarn">Lütfen geçerli bir e-posta adresi girin.</string>
+    <string name="pwdWarn">Şifreniz en az 6 karakter uzunluğunda olmalıdır.</string>
+    <string name="allFieldsError">Lütfen tüm alanlardaki hataları düzeltin.</string>
+    <string name="signUpSuccess">Kayıt başarılı! Artık giriş yapabilirsiniz.</string>
+    <string name="signInSuccess">Giriş başarılı!</string>
+    <string name="invalidEmailOrPassword">E-posta veya şifre hatalı!</string>
+
+    <string name="contact_us">Bize Ulaşın</string>
+    <string name="contact_us_description">Sizden haber almayı çok isteriz. Lütfen aşağıdaki formu doldurun.</string>
+    <string name="send_message">Mesaj Gönder</string>
+
+    <string name="next">İleri</string>
+    <string name="signin">Giriş Yap</string>
+    <string name="newUserSignIn">Yeni kullanıcıyım, Kayıt Ol</string>
+    <string name="signUp">Kayıt Ol</string>
+    <string name="alreadyHaveAccount">Zaten bir hesabım var. Giriş Yap</string>
+
+    <string name="changePassword">Şifreyi Değiştir</string>
+    <string name="currentPassword">Mevcut Şifre</string>
+    <string name="newPassword">Yeni Şifre</string>
+    <string name="confirmPassword">Şifreyi Onayla</string>
+    <string name="editProfile">Profili Düzenle</string>
+    <string name="userName">Tanya Myroniuk</string>
+    <string name="seniorDesigner">Kıdemli Tasarımcı</string>
+
+    <string name="fullName">Tam Ad</string>
+    <string name="eMail">E-posta Adresi</string>
+    <string name="userEmail">tanyamyroniuk@gmail.com</string>
+    <string name="phoneNumber">Telefon Numarası</string>
+    <string name="userPhoneNumber">05382735334</string>
+
+    <string name="birthDate">Doğum Tarihi</string>
+    <string name="day">28</string>
+    <string name="month">Eylül</string>
+    <string name="year">2000</string>
+
+    <string name="welcomeBack">Tekrar hoş geldiniz,</string>
+
+    <string name="cardNumber">4562 1122 4595 7852</string>
+    <string name="expiryDate">Son Kullanma</string>
+    <string name="cvv">CVV</string>
+    <string name="cardExpiryDate">24/2000</string>
+    <string name="cvvNumber">699</string>
+
+    <string name="sent">Gönder</string>
+    <string name="receive">Al</string>
+    <string name="loan">Kredi</string>
+    <string name="topUp">Bakiye Yükle</string>
+    <string name="transaction">İşlem</string>
+
+    <string name="chooseLanguage">Dil Seç</string>
+    <string name="english">İngilizce</string>
+    <string name="turkish">Türkçe</string>
+    <string name="deutsch">Almanca</string>
+    <string name="french">Fransızca</string>
+
+    <string name="privacyPolicyTitle">Gizlilik Politikası</string>
+    <string name="profile">Profil</string>
+    <string name="personalInformation">Kişisel Bilgiler</string>
+    <string name="paymentPreferences">Ödeme Tercihleri</string>
+    <string name="banksAndCards">Bankalar ve Kartlar</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="messageCenter">Mesaj Merkezi</string>
+    <string name="address">Adres</string>
+    <string name="settings">Ayarlar</string>
+    <string name="general">Genel</string>
+    <string name="language">Dil</string>
+    <string name="myProfile">Profilim</string>
+    <string name="security">Güvenlik</string>
+    <string name="shareWithUs">Bizimle hangi verileri paylaşacağınızı seçin</string>
+    <string name="biometric">Biyometrik</string>
+    <string name="statistics">İstatistikler</string>
+    <string name="currentBalance">Mevcut Bakiye</string>
+    <string name="money">₺8.545,00</string>
+    <string name="oct">Eki</string>
+    <string name="nov">Kas</string>
+    <string name="dec">Ara</string>
+    <string name="jan">Oca</string>
+    <string name="feb">Şub</string>
+    <string name="mar">Mar</string>
+
+    <string name="sellAll">Hepsini Sat</string>
+    <string name="title">Başlık</string>
+    <string name="category">Kategori</string>
+    <string name="amount">Tutar</string>
+
+    <string name="hintName">Ad</string>
+    <string name="hintEmail">E-posta</string>
+    <string name="hintPhoneNumber">Telefon Numarası</string>
+    <string name="hintMessage">Mesaj</string>
+    <string name="hintEmailAddress">E-posta Adresi</string>
+    <string name="hintPassword">Şifre</string>
+    <string name="hintEnterCurrentPassword">Mevcut Şifreyi Girin</string>
+    <string name="hintEnterNewPassword">Yeni Şifreyi Girin</string>
+    <string name="hintEnterNewPasswordAgain">Yeni Şifreyi Tekrar Girin</string>
+
+    <string name="hello_blank_fragment">Merhaba boş fragment</string>
+
+    <string name="privacyPolicy">
+Gizliliğinizi önemsiyoruz ve bizimle paylaştığınız kişisel bilgileri korumayı taahhüt ediyoruz.
+Bu uygulama, hizmetlerini sunmak için e-posta adresi, şifre, telefon numarası, ad-soyad ve doğum tarihi gibi bazı kişisel bilgileri toplar.
+Bu bilgiler hesabınızı oluşturmak, kimliğinizi doğrulamak ve güvenliği sağlamak için gereklidir.
+
+Tüm bilgiler cihazınızda yerel olarak (SharedPreferences) güvenli şekilde saklanır, hiçbir dış sunucuya iletilmez veya üçüncü taraflarla paylaşılmaz.
+Verileriniz yalnızca kimlik doğrulama, hesap yönetimi ve uygulama deneyimini geliştirmek için kullanılır.
+
+Uygulama konum, kişi veya kullanım davranışı gibi ek bilgiler toplamaz. Bilgileriniz asla başka şirketlerle paylaşılmaz veya satılmaz.
+
+Verilerinizi korumak için makul güvenlik önlemleri alınır, ancak internet üzerindeki hiçbir yöntem tamamen güvenli değildir.
+Bu uygulamayı kullanarak bu riskleri kabul etmiş olursunuz.
+
+Kullanıcılar istedikleri zaman bilgilerini görüntüleme, güncelleme veya silme hakkına sahiptir.
+Bilgilerinizin doğru ve güncel olmasını öneririz.
+
+Bu gizlilik politikası zaman zaman güncellenebilir. Değişikliklerden haberdar olmak için periyodik olarak incelemenizi öneririz.
+
+Bu uygulamayı kullanarak kişisel bilgilerinizin toplanmasını ve kullanılmasını kabul etmiş olursunuz.
+    </string>
+</resources>

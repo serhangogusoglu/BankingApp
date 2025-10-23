@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Profile"
+            android:text="@string/profile"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:fontFamily="sans-serif-medium" />
@@ -80,7 +80,7 @@
                 android:id="@+id/tvName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tanya Myroniuk"
+                android:text="@string/userName"
                 android:textSize="16sp"
                 android:textColor="@android:color/white"
                 android:fontFamily="sans-serif-medium" />
@@ -89,7 +89,7 @@
                 android:id="@+id/tvProfession"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Senior Designer"
+                android:text="@string/seniorDesigner"
                 android:textSize="14sp"
                 android:textColor="@android:color/darker_gray"
                 android:fontFamily="sans-serif" />
@@ -128,7 +128,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Personal Information"
+                android:text="@string/personalInformation"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
@@ -182,7 +182,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Payment Preferences"
+                android:text="@string/paymentPreferences"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
@@ -239,7 +239,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Banks and Cards"
+                android:text="@string/banksAndCards"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
@@ -296,7 +296,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Notifications"
+                android:text="@string/notifications"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
@@ -411,7 +411,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Address"
+                android:text="@string/address"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
@@ -469,7 +469,7 @@
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:text="Settings"
+                android:text="@string/settings"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
 

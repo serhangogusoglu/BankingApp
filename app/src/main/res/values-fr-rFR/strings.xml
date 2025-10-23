@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BankingApp</string>
+
+    <string name="fullNameWarn">Veuillez entrer un nom valide.</string>
+    <string name="phoneNumWarn">Le numéro de téléphone doit comporter 11 chiffres.</string>
+    <string name="emailWarn">Veuillez entrer une adresse e-mail valide.</string>
+    <string name="pwdWarn">Votre mot de passe doit comporter au moins 6 caractères.</string>
+    <string name="allFieldsError">Veuillez corriger les erreurs dans tous les champs.</string>
+    <string name="signUpSuccess">Inscription réussie ! Vous pouvez maintenant vous connecter.</string>
+    <string name="signInSuccess">Connexion réussie !</string>
+    <string name="invalidEmailOrPassword">E-mail ou mot de passe incorrect !</string>
+
+    <string name="contact_us">Nous contacter</string>
+    <string name="contact_us_description">Nous serions ravis d\'avoir de vos nouvelles. Veuillez remplir le formulaire ci-dessous.</string>
+    <string name="send_message">Envoyer le message</string>
+
+    <string name="next">Suivant</string>
+    <string name="signin">Se connecter</string>
+    <string name="newUserSignIn">Je suis un nouvel utilisateur, S\'inscrire</string>
+    <string name="signUp">S\'inscrire</string>
+    <string name="alreadyHaveAccount">Vous avez déjà un compte. Se connecter</string>
+
+    <string name="changePassword">Changer le mot de passe</string>
+    <string name="currentPassword">Mot de passe actuel</string>
+    <string name="newPassword">Nouveau mot de passe</string>
+    <string name="confirmPassword">Confirmer le mot de passe</string>
+    <string name="editProfile">Modifier le profil</string>
+    <string name="userName">Tanya Myroniuk</string>
+    <string name="seniorDesigner">Designer senior</string>
+
+    <string name="fullName">Nom complet</string>
+    <string name="eMail">Adresse e-mail</string>
+    <string name="userEmail">tanyamyroniuk@gmail.com</string>
+    <string name="phoneNumber">Numéro de téléphone</string>
+    <string name="userPhoneNumber">05382735334</string>
+
+    <string name="birthDate">Date de naissance</string>
+    <string name="day">28</string>
+    <string name="month">Septembre</string>
+    <string name="year">2000</string>
+
+    <string name="welcomeBack">Bon retour,</string>
+
+    <string name="cardNumber">4562 1122 4595 7852</string>
+    <string name="expiryDate">Date d\'expiration</string>
+    <string name="cvv">CVV</string>
+    <string name="cardExpiryDate">24/2000</string>
+    <string name="cvvNumber">699</string>
+
+    <string name="sent">Envoyé</string>
+    <string name="receive">Recevoir</string>
+    <string name="loan">Prêt</string>
+    <string name="topUp">Recharger</string>
+    <string name="transaction">Transaction</string>
+
+    <string name="chooseLanguage">Choisir la langue</string>
+    <string name="english">Anglais</string>
+    <string name="turkish">Turc</string>
+    <string name="deutsch">Allemand</string>
+    <string name="french">Français</string>
+
+    <string name="privacyPolicyTitle">Politique de confidentialité</string>
+    <string name="profile">Profil</string>
+    <string name="personalInformation">Informations personnelles</string>
+    <string name="paymentPreferences">Préférences de paiement</string>
+    <string name="banksAndCards">Banques et cartes</string>
+    <string name="notifications">Notifications</string>
+    <string name="messageCenter">Centre de messages</string>
+    <string name="address">Adresse</string>
+    <string name="settings">Paramètres</string>
+    <string name="general">Général</string>
+    <string name="language">Langue</string>
+    <string name="myProfile">Mon profil</string>
+    <string name="security">Sécurité</string>
+    <string name="shareWithUs">Choisissez quelles données vous partagez avec nous</string>
+    <string name="biometric">Biométrique</string>
+    <string name="statistics">Statistiques</string>
+    <string name="currentBalance">Solde actuel</string>
+    <string name="money">8 545,00 €</string>
+    <string name="oct">Oct</string>
+    <string name="nov">Nov</string>
+    <string name="dec">Déc</string>
+    <string name="jan">Jan</string>
+    <string name="feb">Fév</string>
+    <string name="mar">Mar</string>
+
+    <string name="sellAll">Tout vendre</string>
+    <string name="title">Titre</string>
+    <string name="category">Catégorie</string>
+    <string name="amount">Montant</string>
+
+    <string name="hintName">Nom</string>
+    <string name="hintEmail">E-mail</string>
+    <string name="hintPhoneNumber">Numéro de téléphone</string>
+    <string name="hintMessage">Message</string>
+    <string name="hintEmailAddress">Adresse e-mail</string>
+    <string name="hintPassword">Mot de passe</string>
+    <string name="hintEnterCurrentPassword">Entrez le mot de passe actuel</string>
+    <string name="hintEnterNewPassword">Entrez le nouveau mot de passe</string>
+    <string name="hintEnterNewPasswordAgain">Entrez à nouveau le nouveau mot de passe</string>
+
+    <string name="hello_blank_fragment">Bonjour fragment vide</string>
+
+    <string name="privacyPolicy">
+Nous prenons votre vie privée au sérieux et nous nous engageons à protéger les informations personnelles que vous partagez avec notre application. Cette application collecte certaines informations personnelles pour fournir ses services, y compris votre adresse e-mail, votre mot de passe, votre numéro de téléphone, votre nom complet et votre date de naissance. Ces informations sont nécessaires pour créer et gérer votre compte, vérifier votre identité et assurer la sécurité de vos données.
+
+Toutes les informations que vous fournissez sont stockées en toute sécurité sur votre appareil (SharedPreferences) et ne sont pas transmises à des serveurs externes ou partagées avec des tiers. Vos données sont utilisées uniquement pour l’authentification, la gestion du compte et l’amélioration de votre expérience dans l’application.
+
+L’application ne collecte pas d’informations personnelles supplémentaires, telles que la localisation, les contacts ou le comportement d’utilisation. Vos informations ne seront jamais vendues, louées ou échangées avec d’autres entreprises à des fins marketing.
+
+Nous prenons des mesures raisonnables pour protéger vos données contre tout accès, divulgation ou modification non autorisé. Cependant, aucune méthode de stockage ou de transmission sur Internet n’est totalement sécurisée et, en utilisant cette application, vous reconnaissez ces risques inhérents.
+
+Les utilisateurs ont le droit de consulter, de mettre à jour ou de supprimer leurs informations personnelles à tout moment. Nous vous encourageons à maintenir vos données exactes et à jour pour garantir la meilleure expérience possible.
+
+Cette politique de confidentialité peut être mise à jour de temps à autre pour refléter les changements de nos pratiques ou des lois applicables. Nous vous recommandons de la consulter périodiquement.
+
+En utilisant cette application, vous consentez à la collecte, à l’utilisation et au stockage de vos informations personnelles comme décrit dans cette politique de confidentialité.
+    </string>
+</resources>

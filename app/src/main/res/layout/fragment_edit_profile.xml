@@ -35,7 +35,7 @@
             android:layout_weight="1"
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
-            android:text="Edit Profile"
+            android:text="@string/editProfile"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
     </LinearLayout>
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-medium"
-            android:text="Tanya Myroniuk"
+            android:text="@string/userName"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
@@ -72,7 +72,7 @@
             android:id="@+id/job"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Senior Designer"
+            android:text="@string/seniorDesigner"
             android:textColor="@color/backGroundcolorCategory"
             android:textSize="15sp" />
 
@@ -83,7 +83,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="Full Name"
+        android:text="@string/fullName"
         android:textColor="@color/backGroundcolorCategory"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_weight="1"
-                android:text="Tanya Myroniuk"
+                android:text="@string/userName"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
@@ -144,7 +144,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
-        android:text="E-mail Address"
+        android:text="@string/eMail"
         android:textColor="@color/backGroundcolorCategory"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -182,7 +182,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_weight="1"
-                android:text="tanyamyroniuk@gmail.com"
+                android:text="@string/userEmail"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -203,7 +203,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
-        android:text="Phone Number"
+        android:text="@string/phoneNumber"
         android:textColor="@color/backGroundcolorCategory"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -241,7 +241,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_weight="1"
-                android:text="05382735334"
+                android:text="@string/userPhoneNumber"
                 android:textColor="@android:color/white"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -271,7 +271,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Birth Date"
+            android:text="@string/birthDate"
             android:textColor="#808080"
             android:textSize="14sp" />
 
@@ -291,7 +291,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="28"
+                    android:text="@string/day"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -313,7 +313,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="September"
+                    android:text="@string/month"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -335,7 +335,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2000"
+                    android:text="@string/year"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:textStyle="bold" />
