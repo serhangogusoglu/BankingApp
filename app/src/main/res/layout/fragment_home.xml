@@ -133,6 +133,7 @@
                 android:id="@+id/tvCardExpiry"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="0dp"
                 android:text="@string/cardExpiryDate"
@@ -145,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="230dp"
+                android:layout_marginEnd="150dp"
                 android:layout_marginBottom="1dp"
                 android:text="@string/cvvNumber"
                 android:textColor="@android:color/white"

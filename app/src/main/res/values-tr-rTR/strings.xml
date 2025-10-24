@@ -43,7 +43,7 @@
     <string name="welcomeBack">Tekrar hoş geldiniz,</string>
 
     <string name="cardNumber">4562 1122 4595 7852</string>
-    <string name="expiryDate">Son Kullanma</string>
+    <string name="expiryDate">Geçerlilik tarihi</string>
     <string name="cvv">CVV</string>
     <string name="cardExpiryDate">24/2000</string>
     <string name="cvvNumber">699</string>
