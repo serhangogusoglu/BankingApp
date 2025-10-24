@@ -89,6 +89,8 @@
     <string name="title">Titre</string>
     <string name="category">Catégorie</string>
     <string name="amount">Montant</string>
+    <string name="myCards">Mes cartes</string>
+    <string name="home">Page d"accueil</string>
 
     <string name="hintName">Nom</string>
     <string name="hintEmail">E-mail</string>

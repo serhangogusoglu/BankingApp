@@ -80,6 +80,19 @@ class SettingsFragment : Fragment() {
             dialog.show()
         }
 
+        val sharedPrefs = requireContext().getSharedPreferences("AppSettings",android.content.Context.MODE_PRIVATE)
+        val selectedLanguage = sharedPrefs.getString("selectedLanguage", "en") // varsayılan
+
+        val languageText = when(selectedLanguage) {
+            "tr" -> "Türkçe"
+            "de" -> "Deutsch"
+            "fr" -> "Français"
+            "en" -> "English"
+            else -> "English"
+        }
+
+        binding.languageDeger.text = languageText
+
 
     }
 

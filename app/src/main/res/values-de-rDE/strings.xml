@@ -14,6 +14,8 @@
     <string name="contact_us">Kontakt</string>
     <string name="contact_us_description">Wir würden uns freuen, von Ihnen zu hören. Bitte füllen Sie das folgende Formular aus.</string>
     <string name="send_message">Nachricht senden</string>
+    <string name="myCards">Meine Karten</string>
+    <string name="home">Startseite</string>
 
     <string name="next">Weiter</string>
     <string name="signin">Anmelden</string>

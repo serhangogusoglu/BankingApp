@@ -72,6 +72,8 @@
     <string name="general">Genel</string>
     <string name="language">Dil</string>
     <string name="myProfile">Profilim</string>
+    <string name="myCards">Kartlarım</string>
+    <string name="home">Ana sayfa</string>
     <string name="security">Güvenlik</string>
     <string name="shareWithUs">Bizimle hangi verileri paylaşacağınızı seçin</string>
     <string name="biometric">Biyometrik</string>
