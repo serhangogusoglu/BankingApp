@@ -1,14 +1,12 @@
-package com.example.bankingapp
+package com.example.bankingapp.BottomSheet
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.bankingapp.LocaleHelper
 import com.example.bankingapp.databinding.FragmentLanguageBottomSheetBinding
-import com.example.bankingapp.databinding.FragmentProfileBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import java.util.Locale
 
 class LanguageBottomSheetFragment : BottomSheetDialogFragment() {
     private var _binding: FragmentLanguageBottomSheetBinding? = null

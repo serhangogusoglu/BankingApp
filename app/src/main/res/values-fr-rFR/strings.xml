@@ -91,6 +91,17 @@
     <string name="amount">Montant</string>
     <string name="myCards">Mes cartes</string>
     <string name="home">Page d"accueil</string>
+    <string name="completelySafeTitle">Payer pour tout, c"est simple et pratique.</string>
+    <string name="completelySafe">Empreintes digitales intégrées, reconnaissance faciale et bien plus encore, pour une sécurité optimale.</string>
+    <string name="onboarding2">La plateforme la plus sécurisée pour vos clients</string>
+
+    <string name="onboardingTitle">Paiement le plus rapide au monde</string>
+    <string name="onboarding">Intégrez plusieurs modes de paiement pour accélérer le processus.</string>
+
+    <string name="exitApp">Quitter l"application</string>
+    <string name="areYouSureExit">Êtes-vous sûr de vouloir quitter l"application?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
 
     <string name="hintName">Nom</string>
     <string name="hintEmail">E-mail</string>

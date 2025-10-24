@@ -41,6 +41,17 @@
     <string name="year">2000</string>
 
     <string name="welcomeBack">Tekrar hoş geldiniz,</string>
+    <string name="completelySafe">Dahili Parmak İzi, Yüz Tanıma ve daha fazlası, sizi tamamen güvende tutar.</string>
+    <string name="completelySafeTitle">Her Şeyin Ödemesi Kolay ve Rahat</string>
+    <string name="onboarding2">Müşterileriniz için En Güvenli Platform</string>
+
+    <string name="onboardingTitle">Dünyanın En Hızlı Ödemesi</string>
+    <string name="onboarding">Süreci hızla ilerletmenize yardımcı olmak için birden fazla ödeme yöntemini entegre edin.</string>
+
+    <string name="exitApp">Çıkış Yap</string>
+    <string name="areYouSureExit">Uygulamadan çıkmak istediğinizden emin misiniz?</string>
+    <string name="yes">Evet</string>
+    <string name="no">Hayır</string>
 
     <string name="cardNumber">4562 1122 4595 7852</string>
     <string name="expiryDate">Geçerlilik tarihi</string>

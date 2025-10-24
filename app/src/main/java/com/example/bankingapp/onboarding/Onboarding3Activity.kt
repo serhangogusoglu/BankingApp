@@ -1,12 +1,11 @@
-package com.example.bankingapp
+package com.example.bankingapp.onboarding
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.bankingapp.R
 import com.example.bankingapp.SignInUp.SignInActivity
 
 class Onboarding3Activity : AppCompatActivity() {

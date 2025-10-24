@@ -1,10 +1,12 @@
-package com.example.bankingapp
+package com.example.bankingapp.splashActivity
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.example.bankingapp.R
+import com.example.bankingapp.onboarding.Onboarding1Activity
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 

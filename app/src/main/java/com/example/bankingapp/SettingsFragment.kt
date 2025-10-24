@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.bankingapp.BottomSheet.LanguageBottomSheetFragment
 import com.example.bankingapp.databinding.FragmentSettingsBinding
 
 class SettingsFragment : Fragment() {
@@ -61,17 +62,17 @@ class SettingsFragment : Fragment() {
 
         binding.exitIcon.setOnClickListener {
             val builder = androidx.appcompat.app.AlertDialog.Builder(requireContext())
-            builder.setTitle("Exit App")
-            builder.setMessage("Are you sure you want to exit the app?")
+            builder.setTitle(R.string.exitApp)
+            builder.setMessage(R.string.areYouSureExit)
 
             // Evet butonu
-            builder.setPositiveButton("Yes") { dialog, _ ->
+            builder.setPositiveButton(R.string.yes) { dialog, _ ->
                 dialog.dismiss()
                 requireActivity().finish() // Uygulamayı kapat
             }
 
             // Hayır butonu
-            builder.setNegativeButton("No") { dialog, _ ->
+            builder.setNegativeButton(R.string.no) { dialog, _ ->
                 dialog.dismiss() // Sadece popup kapansın
             }
 

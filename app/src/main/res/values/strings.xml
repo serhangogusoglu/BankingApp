@@ -52,6 +52,17 @@
     <string name="privacyPolicyTitle">Privacy Policy</string>
     <string name="profile">Profile</string>
     <string name="home">Home page</string>
+    <string name="completelySafe">Built-in Fingerprint, face recognition and more, keeping you completely safe.</string>
+    <string name="completelySafeTitle">Paying for Everything is Easy and Convenient</string>
+    <string name="onboarding2">The most Secure Platform for Customer</string>
+    <string name="onboardingTitle">Fastest Payment in the World</string>
+    <string name="onboarding">Integrate multiple payment methods to help you up the process quickly.</string>
+
+    <string name="exitApp">Exit App</string>
+    <string name="areYouSureExit">Are you sure you want to exit the app?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
     <string name="myCards">My Cards</string>
     <string name="personalInformation">Personal Information</string>
     <string name="paymentPreferences">Payment Preferences</string>

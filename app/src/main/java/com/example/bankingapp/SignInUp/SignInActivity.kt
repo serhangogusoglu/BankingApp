@@ -8,8 +8,8 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import com.example.bankingapp.MainActivity
-import com.example.bankingapp.Onboarding3Activity
+import com.example.bankingapp.mainActivity.MainActivity
+import com.example.bankingapp.onboarding.Onboarding3Activity
 import com.example.bankingapp.R
 import com.example.bankingapp.databinding.ActivitySignInBinding
 

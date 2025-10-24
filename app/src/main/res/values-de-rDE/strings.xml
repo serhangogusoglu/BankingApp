@@ -16,6 +16,17 @@
     <string name="send_message">Nachricht senden</string>
     <string name="myCards">Meine Karten</string>
     <string name="home">Startseite</string>
+    <string name="completelySafeTitle">Einfach und bequem bezahlen</string>
+    <string name="completelySafe">Integrierte Fingerabdruck- und Gesichtserkennung und mehr für Ihre Sicherheit.</string>
+    <string name="onboarding2">Die sicherste Plattform für Kunden</string>
+
+    <string name="onboardingTitle">Schnellste Zahlung der Welt</string>
+    <string name="onboarding">Integrieren Sie mehrere Zahlungsmethoden für einen schnellen Zahlungsprozess.</string>
+
+    <string name="exitApp">App beenden</string>
+    <string name="areYouSureExit">Möchten Sie die App wirklich beenden?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
 
     <string name="next">Weiter</string>
     <string name="signin">Anmelden</string>

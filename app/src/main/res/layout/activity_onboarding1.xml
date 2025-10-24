@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Onboarding1Activity"
+    tools:context=".onboarding.Onboarding1Activity"
     android:background="@color/backcolor"
     >
 
@@ -24,41 +24,54 @@
         />
 
     <ImageView
-        android:id="@+id/slide"
+        android:id="@+id/slider"
         android:layout_width="45dp"
         android:layout_height="6dp"
-        android:layout_marginTop="430dp"
         android:background="@drawable/slide"
         app:layout_constraintEnd_toEndOf="@+id/mainPic"
         app:layout_constraintStart_toStartOf="@+id/mainPic"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        android:layout_marginTop="430dp" />
 
-    <ImageView
-        android:id="@+id/heading"
-        android:layout_width="282dp"
-        android:layout_height="136dp"
-        android:layout_marginTop="470dp"
-        android:background="@drawable/heading"
-        app:layout_constraintEnd_toEndOf="@+id/mainPic"
-        app:layout_constraintStart_toStartOf="@+id/mainPic"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/onboardingTitle"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/slider"
+        app:layout_constraintStart_toStartOf="@id/mainPic"
+        app:layout_constraintEnd_toEndOf="@id/mainPic"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/subText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="@id/mainPic"
+        app:layout_constraintEnd_toEndOf="@id/mainPic"
+        android:layout_marginTop="8dp"/>
 
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/nextButton1"
         android:layout_width="335dp"
         android:layout_height="56dp"
         android:text="@string/next"
         android:textColor="@color/white"
         android:textSize="20dp"
-        android:layout_marginTop="650dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subText"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="35dp"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="85dp"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

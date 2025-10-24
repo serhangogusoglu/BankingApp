@@ -1,7 +1,12 @@
-package com.example.bankingapp
+package com.example.bankingapp.mainActivity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.bankingapp.HomeFragment
+import com.example.bankingapp.MyCardsFragment
+import com.example.bankingapp.R
+import com.example.bankingapp.SettingsFragment
+import com.example.bankingapp.statisticsFragment.StatisticsFragment
 import com.example.bankingapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.bankingapp
+package com.example.bankingapp.statisticsFragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.bankingapp.R
 import com.example.bankingapp.adapter.TransactionAdapter
 import com.example.bankingapp.databinding.FragmentStatisticsBinding
 import com.example.bankingapp.models.Transaction
@@ -38,7 +39,9 @@ class StatisticsFragment : Fragment() {
         val transactions = listOf(
             Transaction("Apple Store", "Entertainment", "-$5.99", R.drawable.apple_svgrepo_com),
             Transaction("Spotify", "Music", "-$12.99", R.drawable.spotify_color_svgrepo_com),
-            Transaction("Money Transfer", "Transaction", "$300", R.drawable.grocery_store_bakery_svgrepo_com)
+            Transaction("Money Transfer", "Transaction", "$300",
+                R.drawable.grocery_store_bakery_svgrepo_com
+            )
         )
 
         // TransactionAdapter'ı oluştur ve veri listesini ver

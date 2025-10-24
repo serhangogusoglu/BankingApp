@@ -11,7 +11,7 @@
         android:id="@+id/topBar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="16dp"
@@ -21,8 +21,8 @@
 
         <ImageView
             android:id="@+id/btnBack"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:clickable="true"
             android:focusable="true"
             android:src="@drawable/back_icon" />

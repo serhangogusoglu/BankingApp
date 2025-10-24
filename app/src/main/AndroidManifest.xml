@@ -19,16 +19,16 @@
             android:name=".SignInUp.SignInActivity"
             android:exported="false" />
         <activity
-            android:name=".Onboarding3Activity"
+            android:name=".onboarding.Onboarding3Activity"
             android:exported="false" />
         <activity
-            android:name=".Onboarding2Activity"
+            android:name=".onboarding.Onboarding2Activity"
             android:exported="false" />
         <activity
-            android:name=".Onboarding1Activity"
+            android:name=".onboarding.Onboarding1Activity"
             android:exported="false" /> <!-- SplashActivity artık başlangıç ekranı -->
         <activity
-            android:name=".SplashActivity"
+            android:name=".splashActivity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".mainActivity.MainActivity"
             android:exported="true" />
     </application>
 
