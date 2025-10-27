@@ -43,14 +43,13 @@ UI/UX: XML Layouts ile oluşturulmuş, Material Design ilkelerine uygun arayüz.
 Veri Depolama: SharedPreferences (Yerel kullanıcı ayarları, oturum bilgileri ve çoklu dil tercihlerinin kalıcı olarak saklanması için kullanılmıştır.)
 
 <img width="403" height="826" alt="splashscreen" src="https://github.com/user-attachments/assets/6c02552f-b127-479e-977f-479d8a9a19e5" />
-
 <img width="407" height="827" alt="onboarding1" src="https://github.com/user-attachments/assets/f92c6298-08d7-4c7b-a0da-3a35351447b0" />
 <img width="409" height="806" alt="onboarding2" src="https://github.com/user-attachments/assets/e758b104-e73d-4032-a43e-12dbf4fed746" />
 <img width="422" height="827" alt="onboarding3" src="https://github.com/user-attachments/assets/7278489b-dacb-4c71-a1c9-093146dc65c1" />
 <img width="405" height="823" alt="signin" src="https://github.com/user-attachments/assets/4d03d19c-5686-42a5-ad8d-7a37a3a1d357" />
 <img width="411" height="823" alt="signinalert" src="https://github.com/user-attachments/assets/76e76aa9-bce1-4779-b7a7-0432f1e92b8f" />
-<img width="409" height="814" alt="signup" src="https://github.com/user-attachments/assets/a9c00e24-4dcb-4598-b4b7-4e6658124b9c" />
-<img width="401" height="819" alt="signupalert" src="https://github.com/user-attachments/assets/3478deec-f8b7-4c5e-b3b7-01c23ecf41a3" />
+<img width="426" height="845" alt="nSignUpScreen" src="https://github.com/user-attachments/assets/de2fefc2-13b7-404b-8b2b-b815a955b7e1" />
+<img width="410" height="841" alt="nSignupAlert" src="https://github.com/user-attachments/assets/fbe10d75-679d-46a0-95f0-c12f46163623" />
 <img width="412" height="833" alt="homepagescreen" src="https://github.com/user-attachments/assets/38aadd66-5293-4dea-a4e6-8af1c697742d" />
 <img width="435" height="823" alt="mycardsscreen" src="https://github.com/user-attachments/assets/7a1d72c5-478a-4145-8d2b-55851f4bc2ba" />
 <img width="400" height="819" alt="statisticsscreen" src="https://github.com/user-attachments/assets/d81327f6-b940-4177-a450-226166dd3f36" />
@@ -59,15 +58,5 @@ Veri Depolama: SharedPreferences (Yerel kullanıcı ayarları, oturum bilgileri 
 <img width="395" height="810" alt="languagebottomsheet" src="https://github.com/user-attachments/assets/4a7172b8-f126-4949-a5b9-4c08432527ed" />
 <img width="410" height="822" alt="gizlilikpolitikasiekrani" src="https://github.com/user-attachments/assets/64d5a42c-349d-4dcb-a3f3-bc40ad719d26" />
 <img width="421" height="818" alt="sifredegistirekrani" src="https://github.com/user-attachments/assets/de266279-c318-4699-9579-d7d2542a5d2d" />
-<img width="423" height="806" alt="profilimsayfası" src="https://github.com/user-attachments/assets/f8df06c3-2e2f-4211-8049-dc3495a17700" />
+<img width="441" height="854" alt="nProfileScreen" src="https://github.com/user-attachments/assets/d8718500-3371-4e48-befc-b01a6d9fd591" />
 <img width="407" height="818" alt="bizeulasinsayfasipng" src="https://github.com/user-attachments/assets/ddf4a5fb-c66e-4a80-b98d-b541ae2c9e91" />
-
- 
-
-
-
-
-
-
-
-
