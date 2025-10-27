@@ -6,6 +6,7 @@
     <string name="phoneNumWarn">Die Telefonnummer muss 11-stellig sein.</string>
     <string name="emailWarn">Bitte geben Sie eine gültige E-Mail-Adresse ein.</string>
     <string name="pwdWarn">Ihr Passwort muss mindestens 6 Zeichen lang sein.</string>
+    <string name="professionWarn">Bitte wählen Sie Ihren Beruf.</string>
     <string name="allFieldsError">Bitte korrigieren Sie die Fehler in allen Feldern.</string>
     <string name="signUpSuccess">Registrierung erfolgreich! Sie können sich jetzt anmelden.</string>
     <string name="signInSuccess">Anmeldung erfolgreich!</string>
@@ -27,6 +28,18 @@
     <string name="areYouSureExit">Möchten Sie die App wirklich beenden?</string>
     <string name="yes">Ja</string>
     <string name="no">Nein</string>
+
+    <string name="hintProfession">Wählen Sie einen Beruf</string>
+    <string-array name="profession_list">
+        <item>Student</item>
+        <item>Ingenieur</item>
+        <item>Arzt</item>
+        <item>Lehrer</item>
+        <item>Beamter</item>
+        <item>Freiberufler</item>
+        <item>Andere</item>
+    </string-array>
+
 
     <string name="next">Weiter</string>
     <string name="signin">Anmelden</string>

@@ -23,6 +23,16 @@ class SignUpActivity : AppCompatActivity() {
         binding.password.filters = arrayOf(InputFilter.LengthFilter(6))
         binding.phoneNumber.filters = arrayOf(InputFilter.LengthFilter(11))
 
+        // Meslek alanı için açılır liste (AutoCompleteTextView)
+        val professions = resources.getStringArray(R.array.profession_list)
+        val adapter = android.widget.ArrayAdapter(this, android.R.layout.simple_dropdown_item_1line, professions)
+        binding.profession.setAdapter(adapter)
+
+        binding.profession.setOnClickListener {
+            binding.profession.showDropDown()
+        }
+
+
 
         // Sign up butonuna basıldıgında
         binding.signInButton.setOnClickListener {
@@ -30,6 +40,7 @@ class SignUpActivity : AppCompatActivity() {
             val phone = binding.phoneNumber.text.toString().trim()
             val email = binding.email.text.toString().trim()
             val password = binding.password.text.toString().trim()
+            val profession = binding.profession.text.toString().trim()
 
             var isValid = true
 
@@ -61,6 +72,13 @@ class SignUpActivity : AppCompatActivity() {
                 binding.passwordLayout.error = null
             }
 
+            if (profession.isEmpty()) {
+                binding.professionLayout.error = getString(R.string.professionWarn)
+                isValid = false
+            } else {
+                binding.professionLayout.error = null
+            }
+
             if (isValid) {
 
                 val cardNumber = generateCardNumber()
@@ -75,6 +93,7 @@ class SignUpActivity : AppCompatActivity() {
                     putString("cardNumber", cardNumber)
                     putString("expiryDate", expiryDate)
                     putString("cvv", cvv)
+                    putString("profession", profession)
 
                     apply()
                 }

@@ -8,6 +8,7 @@
     <string name="pwdWarn">Votre mot de passe doit comporter au moins 6 caractères.</string>
     <string name="allFieldsError">Veuillez corriger les erreurs dans tous les champs.</string>
     <string name="signUpSuccess">Inscription réussie ! Vous pouvez maintenant vous connecter.</string>
+    <string name="professionWarn">Veuillez choisir votre profession.</string>
     <string name="signInSuccess">Connexion réussie !</string>
     <string name="invalidEmailOrPassword">E-mail ou mot de passe incorrect !</string>
 
@@ -102,6 +103,18 @@
     <string name="areYouSureExit">Êtes-vous sûr de vouloir quitter l"application?</string>
     <string name="yes">Oui</string>
     <string name="no">Non</string>
+
+    <string name="hintProfession">Choisissez une profession</string>
+    <string-array name="profession_list">
+        <item>Étudiant</item>
+        <item>Ingénieur</item>
+        <item>Médecin</item>
+        <item>Enseignant</item>
+        <item>Fonctionnaire</item>
+        <item>Indépendant</item>
+        <item>Autre</item>
+    </string-array>
+
 
     <string name="hintName">Nom</string>
     <string name="hintEmail">E-mail</string>

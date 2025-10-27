@@ -6,6 +6,9 @@
     <string name="emailWarn">Please enter a valid email address.</string>
     <string name="pwdWarn">Your password must be at least 6 characters long.</string>
     <string name="allFieldsError">Please correct the errors in all fields.</string>
+
+    <string name="professionWarn">Please choose your profession.</string>
+
     <string name="signUpSuccess">Registration successful! You can now log in.</string>
     <string name="signInSuccess">Login successful!</string>
     <string name="invalidEmailOrPassword">Email or password is incorrect!</string>
@@ -62,6 +65,17 @@
     <string name="areYouSureExit">Are you sure you want to exit the app?</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+
+    <string name="hintProfession">Choose a profession</string>
+    <string-array name="profession_list">
+        <item>Student</item>
+        <item>Engineer</item>
+        <item>Doctor</item>
+        <item>Teacher</item>
+        <item>Officer</item>
+        <item>Freelance</item>
+        <item>Other</item>
+    </string-array>
 
     <string name="myCards">My Cards</string>
     <string name="personalInformation">Personal Information</string>

@@ -7,6 +7,7 @@
     <string name="emailWarn">Lütfen geçerli bir e-posta adresi girin.</string>
     <string name="pwdWarn">Şifreniz en az 6 karakter uzunluğunda olmalıdır.</string>
     <string name="allFieldsError">Lütfen tüm alanlardaki hataları düzeltin.</string>
+    <string name="professionWarn">Lütfen meslek bilgisi seçiniz.</string>
     <string name="signUpSuccess">Kayıt başarılı! Artık giriş yapabilirsiniz.</string>
     <string name="signInSuccess">Giriş başarılı!</string>
     <string name="invalidEmailOrPassword">E-posta veya şifre hatalı!</string>
@@ -58,6 +59,18 @@
     <string name="cvv">CVV</string>
     <string name="cardExpiryDate">24/2000</string>
     <string name="cvvNumber">699</string>
+
+    <string name="hintProfession">Bir meslek seçin</string>
+    <string-array name="profession_list">
+        <item>Öğrenci</item>
+        <item>Mühendis</item>
+        <item>Doktor</item>
+        <item>Öğretmen</item>
+        <item>Memur</item>
+        <item>Serbest meslek</item>
+        <item>Diğer</item>
+    </string-array>
+
 
     <string name="sent">Gönder</string>
     <string name="receive">Al</string>

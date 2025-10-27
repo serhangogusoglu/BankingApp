@@ -27,8 +27,11 @@ class ProfileFragment : Fragment() {
         val sharedPref = requireActivity().getSharedPreferences("UserData", Context.MODE_PRIVATE)
         val fullName = sharedPref.getString("fullName", "Kullanıcı Adı")
 
+        val profession = sharedPref.getString("profession", "Meslek Bilgisi")
+
         // Profile ekranında isim gçsterilecek textviewe set et
         binding.tvName.text = fullName
+        binding.tvProfession.text = profession
 
         binding.btnEditProfile.setOnClickListener {
             parentFragmentManager.beginTransaction()
