@@ -1,5 +1,6 @@
 package com.example.bankingapp
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -22,6 +23,12 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val sharedPref = requireActivity().getSharedPreferences("UserData", Context.MODE_PRIVATE)
+        val fullName = sharedPref.getString("fullName", "Kullanıcı Adı")
+
+        // Profile ekranında isim gçsterilecek textviewe set et
+        binding.tvName.text = fullName
 
         binding.btnEditProfile.setOnClickListener {
             parentFragmentManager.beginTransaction()
